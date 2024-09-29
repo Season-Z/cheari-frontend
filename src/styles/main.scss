@@ -1,0 +1,128 @@
+/** main scss */
+@import '../specific/reset.scss';
+
+/**     dropdown menu样式       **/
+.utopian-header-dropdown.ant-dropdown-menu {
+  width: 280px;
+  box-sizing: border-box;
+  border-radius: 8px;
+
+  .ant-dropdown-menu-submenu-title,
+  .ant-dropdown-menu-item {
+    padding: 13px 12px !important;
+  }
+
+  .ant-dropdown-menu-item-selected {
+    font-weight: 500 !important;
+  }
+}
+
+.issue-dropdown .ant-dropdown-menu {
+  width: 200px;
+  box-sizing: border-box;
+
+  .ant-dropdown-menu-submenu-title,
+  .ant-dropdown-menu-item {
+    padding: 5px 12px !important;
+  }
+}
+
+@font-face {
+  font-family: 'DIN';
+  src: url('/fonts/DIN-Alternate-Bold.ttf') format('opentype');
+}
+
+.font-din {
+  font-family: DIN !important;
+  font-weight: normal;
+}
+
+.confirm-tips {
+  .ant-popconfirm-message {
+    margin-bottom: 0;
+  }
+
+  .ant-popconfirm-description {
+    margin-top: 0 !important;
+  }
+}
+
+.ant-drawer-content {
+  .ant-list-empty-text {
+    display: none;
+  }
+}
+
+.ant-table {
+  a {
+    color: $main !important;
+  }
+}
+
+/* 定制滚动条的整体样式 */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+/* 定制滚动条轨道的样式 */
+::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+/* 定制滚动条滑块的样式 */
+::-webkit-scrollbar-thumb {
+  background: $fill-6;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* 当滑块悬停时的样式 */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+// 表单必选*号后置
+.ant-form-vertical .ant-form-item-required::before {
+  position: absolute;
+  right: 0;
+}
+
+// 表单label颜色
+.ant-form-item .ant-form-item-label>label {
+  @apply text-text-5;
+}
+
+.ant-btn-default:not(:hover) {
+  @apply text-text-5;
+
+  .icon {
+    @apply text-fill-8;
+  }
+}
+
+// 下拉多个选择时，相邻项不显示圆角
+// copy from official site
+.ant-select-dropdown .ant-select-item-option-selected:has(+ .ant-select-item-option-selected) {
+  border-end-start-radius: 0;
+  border-end-end-radius: 0;
+}
+
+.ant-select-dropdown .ant-select-item-option-selected:has(+ .ant-select-item-option-selected) {
+  border-end-start-radius: 0;
+  border-end-end-radius: 0;
+}
+
+.ant-select-dropdown .ant-select-item-option-selected:has(+ .ant-select-item-option-selected) {
+  border-end-start-radius: 0;
+  border-end-end-radius: 0;
+}
+
+.ant-select-dropdown .ant-select-item-option-selected:has(+ .ant-select-item-option-selected)+.ant-select-item-option-selected {
+  border-start-start-radius: 0;
+  border-start-end-radius: 0;
+}
+
+.ant-table-cell .ant-table-selection-column {
+  padding-right: 0 !important;
+}
