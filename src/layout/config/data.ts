@@ -1,10 +1,14 @@
-/*
- * @Author: zhouxishun
- * @Date: 2023-11-17 16:43:18
- * @LastEditors: zhouxishun
- * @LastEditTime: 2024-01-29 10:18:45
- * @Description:
- */
+import { routes } from '@/router';
+import { routerRoleAuth } from '@/utils';
+import { freePaths } from './role';
+
+export const getDomainRoutes = () => {
+  const domains = routes[0].children?.filter((v) => !routerRoleAuth(freePaths, v.path!) && v.options?.headerNav);
+  const domainRoutes = domains?.map((v) => ({ label: v.options?.title, key: v.path || v.children?.[0].path }));
+
+  return { domainRoutes, domains };
+};
+
 /** 左侧菜单宽度 */
 export const navigationWidth = {
   large: 216,

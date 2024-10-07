@@ -126,3 +126,21 @@
 .ant-table-cell .ant-table-selection-column {
   padding-right: 0 !important;
 }
+
+.ant-menu {
+  background-color: transparent !important;
+}
+
+.upload-img.ant-upload-wrapper {
+  width: 200px !important;
+  height: 200px !important;
+
+  .ant-upload {
+    width: 200px !important;
+    height: 200px !important;
+  }
+}
+
+.ant-menu-horizontal {
+  border: none !important;
+}

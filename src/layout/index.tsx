@@ -3,14 +3,14 @@ import Loading from '@/components/loading';
 // import { useGlobalContext } from '@/providers/global';
 import { routerRoleAuth } from '@/utils';
 import { useEffect, useState } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import BlankLayout from './blank-layout';
 import { freePaths } from './config';
 import Layout from './layout';
 
 const Bootstrap: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const { pathname } = useLocation();
-  const router = useNavigate();
+  // const router = useNavigate();
   const [init, setInit] = useState(false);
 
   // const { loadUserInfo, user, groupInfo } = useGlobalContext();

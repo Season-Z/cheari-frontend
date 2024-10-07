@@ -57,7 +57,7 @@ const HeaderDropdown = () => {
     if (node.key === 'logout') {
       handleLogout();
     } else if (node.key === 'settings') {
-      router('/user/setting');
+      router('/members/person');
     }
   };
 

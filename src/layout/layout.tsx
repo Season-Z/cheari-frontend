@@ -1,8 +1,10 @@
 import ErrorBoundary from '@/components/error-boundary';
+import Gap from '@/components/gap';
 import { useModifyPassword } from '@/components/modify-password-modal';
+import useGlobalData from '@/hooks/useGlobalData';
 import { routes } from '@/router';
 import { routerStates } from '@cyberutopian/hooks';
-import { Layout } from '@cyberutopian/layout';
+import { Layout, LayoutBreadcrumb } from '@cyberutopian/layout';
 import { LayoutType } from '@cyberutopian/layout/dist/typings/layout';
 import debounce from 'lodash/debounce';
 import { memo, useEffect, useMemo, useRef, useState } from 'react';
@@ -11,12 +13,14 @@ import { colorsEnums } from '../specific/enums';
 import Content from './components/content/content';
 import Header from './components/header';
 import Navigation from './components/navigation';
-import { navigationWidth } from './config';
+import { breadConfig, navigationWidth } from './config';
 import { RootProvider } from './context';
 import './index.css';
 
 const LayoutWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const { pathname } = useLocation();
+
+  useGlobalData();
 
   // 用户密码修改
   const { setShowModal: setPasswordModalVisible, ModifyPasswordModal } = useModifyPassword(false);
@@ -41,7 +45,7 @@ const LayoutWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) =>
   // 内容宽度
   const contentWidth = useMemo(() => clientRect.clientWidth - navWidth - 4, [navWidth, clientRect.clientWidth]);
   // 内容高度
-  const contentHeight = useMemo(() => clientRect.clientHeight - 64, [clientRect.clientHeight]);
+  const contentHeight = useMemo(() => clientRect.clientHeight - 64 - 30 - 1, [clientRect.clientHeight]);
 
   const oldPathname = useRef<string>('');
   useEffect(() => {
@@ -81,6 +85,8 @@ const LayoutWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) =>
           <Navigation />
           <main className="bg-transparent relative h-full flex-1 shrink-0" style={{ width: `${contentWidth}px` }}>
             <Header />
+            <LayoutBreadcrumb breadConfig={breadConfig} />
+            <Gap size="small" />
             <Content width={contentWidth} height={contentHeight} style={{ height: `${contentHeight}px` }}>
               {children}
             </Content>

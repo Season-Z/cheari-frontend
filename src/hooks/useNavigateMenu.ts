@@ -1,23 +1,26 @@
-import { useGlobalContext } from '@/providers/global';
-import { routes } from '@/router';
 import { formatNavigationData } from '@cyberutopian/layout';
-import { NavigationMenuType } from '@cyberutopian/layout/dist/typings/navigation';
+import { NavigationMenuType, PageRouterType } from '@cyberutopian/layout/dist/typings/navigation';
 import { useEffect, useState } from 'react';
+import useGlobalData from './useGlobalData';
 
 const useNavigateMenu = () => {
-  const { user } = useGlobalContext();
+  const { domains, global } = useGlobalData();
 
   const [navigateMenu, setNavigateMenu] = useState<NavigationMenuType[]>([]);
   // const roleRef = useRef<string>();
 
   useEffect(() => {
     // if (roleRef.current === user?.teamRole) return;
-    const menu = formatNavigationData('', routes[0].children || []);
+
+    const list = domains.domains?.filter((v) =>
+      [v.path, v.children?.[0].path].includes(global.domainRouteKey),
+    ) as PageRouterType[];
+    const menu = formatNavigationData('', list[0].children || []);
 
     setNavigateMenu(menu);
 
     // roleRef.current = user?.teamRole;
-  }, [user?.teamRole]);
+  }, [domains.domains, global.domainRouteKey]);
 
   return navigateMenu;
 };
