@@ -3,8 +3,8 @@ import { Card } from 'antd';
 
 const Product = () => {
   return (
-    <div className="flex items-start gap-4">
-      <CardBlock title="产品介绍" className="flex-1">
+    <div className="flex items-start gap-4 h-full">
+      <CardBlock title="产品介绍" className="flex-1 h-full">
         <div dangerouslySetInnerHTML={{ __html: 'aaa' }} />
       </CardBlock>
       <CardBlock title="3D打印方案" className="w-[300px]">

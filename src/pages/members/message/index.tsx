@@ -26,8 +26,8 @@ const Message = () => {
           >
             <List.Item.Meta
               avatar={<Avatar src={item.avatar} />}
-              title={<a href={item.href}>{item.title}</a>}
-              description={item.description}
+              title={<a href={item.href}>{'李磊'}</a>}
+              description={'私信信息     昨天 09:16'}
             />
             {item.content}
           </List.Item>

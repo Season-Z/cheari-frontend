@@ -1,7 +1,7 @@
+import Contact from '@/components/contact';
 import Gap from '@/components/gap';
 import { CardBlock } from '@cyberutopian/components';
 import { useState } from 'react';
-import Contact from '../create-print/components/contact';
 import First from './components/first';
 import Five from './components/five';
 import Four from './components/four';
