@@ -12,7 +12,7 @@ const data = Array.from({ length: 23 }).map((_, i) => ({
 
 const ChatList = () => {
   const router = useNavigate();
-  const clickChat = () => {
+  const clickChat = (item: any) => {
     router('/user/forum/chat-list/123');
   };
 

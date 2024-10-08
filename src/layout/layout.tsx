@@ -23,7 +23,7 @@ const LayoutWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) =>
   useGlobalData();
 
   // 用户密码修改
-  const { setShowModal: setPasswordModalVisible, ModifyPasswordModal } = useModifyPassword(false);
+  const { setShowModal: setPasswordModalVisible, ModifyPasswordModal } = useModifyPassword();
   // 菜单是否展开
   const [isExpanded, setIsExpanded] = useState(true);
   // const [clientWidth, setClientWidth] = useState(document.body.clientWidth);

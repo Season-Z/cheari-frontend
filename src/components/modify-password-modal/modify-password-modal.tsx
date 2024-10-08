@@ -9,11 +9,10 @@ import { FC, useEffect } from 'react';
 export interface Props {
   visible: boolean;
   onClose?: () => void;
-  isFirstLogin?: boolean;
   onSuccess?: () => void;
 }
 
-const ModifyPasswordModal: FC<Props> = ({ visible, onClose, isFirstLogin = false, onSuccess }) => {
+const ModifyPasswordModal: FC<Props> = ({ visible, onClose, onSuccess }) => {
   const [form] = Form.useForm();
 
   // const { data: rsaPublicKey } = useCyberFetch['GET/api/v1/common/public-key']({});
@@ -30,7 +29,7 @@ const ModifyPasswordModal: FC<Props> = ({ visible, onClose, isFirstLogin = false
     //   });
     //   const { code } = await sendRequest(values);
     //   if (code === '200') {
-    //     onSuccess?.();
+    onSuccess?.();
     //   }
     // });
   };
@@ -70,14 +69,12 @@ const ModifyPasswordModal: FC<Props> = ({ visible, onClose, isFirstLogin = false
           label="新密码"
           rules={[
             { required: true, message: '请输入新的密码' },
-            ({ getFieldValue }) => ({
+            () => ({
               validator(_, value) {
                 if (!checkPassword(value)) {
                   return Promise.reject(new Error('密码格式错误'));
                 }
-                // if (getFieldValue('oldPassword') === value) {
-                //   return Promise.reject(new Error('新密码和旧密码不可以相同'));
-                // }
+
                 return Promise.resolve();
               },
             }),

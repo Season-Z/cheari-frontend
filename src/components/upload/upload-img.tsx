@@ -22,7 +22,7 @@ const beforeUpload = (file: FileType) => {
   return isJpgOrPng && isLt2M;
 };
 
-const UploadImg: FC<{ className?: string }> = ({ className }) => {
+const UploadImg: FC<{ className?: string }> = () => {
   const [loading, setLoading] = useState(false);
   const [imageUrl, setImageUrl] = useState<string>(
     'https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.png',

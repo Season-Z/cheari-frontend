@@ -8,7 +8,7 @@ import './index.css';
 const BlankLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   // const { loadUserInfo, loadUserInfoLoading } = useGlobalContext();
   // 用户密码修改
-  const { setShowModal: setPasswordModalVisible, ModifyPasswordModal } = useModifyPassword(true);
+  const { setShowModal: setPasswordModalVisible, ModifyPasswordModal } = useModifyPassword();
 
   return (
     <RootProvider value={{ setPasswordModalVisible }}>

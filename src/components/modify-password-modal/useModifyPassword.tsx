@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import ModifyPasswordModal from './modify-password-modal';
 
-const useModifyPassword = (isFirstLogin: boolean) => {
+const useModifyPassword = () => {
   const [showModal, setShowModal] = useState(false);
 
   // const { sendRequest } = useCyberFetch['GET/api/v1/users/logout']({}, { manual: true });
@@ -32,12 +32,7 @@ const useModifyPassword = (isFirstLogin: boolean) => {
     showModal,
     setShowModal,
     ModifyPasswordModal: (
-      <ModifyPasswordModal
-        visible={showModal}
-        isFirstLogin={isFirstLogin}
-        onClose={onClose}
-        onSuccess={handleCloseModifyPasswordModal}
-      />
+      <ModifyPasswordModal visible={showModal} onClose={onClose} onSuccess={handleCloseModifyPasswordModal} />
     ),
   };
 };

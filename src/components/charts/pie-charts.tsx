@@ -14,7 +14,7 @@ export const getPieConfig = (config: PieConfigType) => {
   const defaultPieStyle = {
     fill: '',
   };
-  if (data.every((item) => !item.value)) {
+  if (data.every((item: any) => !item.value)) {
     defaultPieStyle.fill = '#F0F2F5';
   }
 
