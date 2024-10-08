@@ -1,6 +1,6 @@
 import { SearchField } from '@/components/form-field';
 import WordEditor from '@/components/word-editor';
-import { CardBlock } from '@cyberutopian/components';
+import { CardBlock } from '@/packages/@cyberutopian/components';
 import { Button, Input } from 'antd';
 import { useState } from 'react';
 

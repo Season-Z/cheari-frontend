@@ -6,7 +6,7 @@
  * @Description:面包屑
  */
 
-import { BreadcrumbConfigType } from '@cyberutopian/layout/dist/typings/bread';
+import { BreadcrumbConfigType } from '@/packages/@cyberutopian/layout/typings/bread';
 
 const projectInfo = [
   {

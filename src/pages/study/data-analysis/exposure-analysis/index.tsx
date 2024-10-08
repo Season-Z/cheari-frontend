@@ -1,7 +1,7 @@
 import { getPieConfig, PieCharts } from '@/components/charts/pie-charts';
 import Gap from '@/components/gap';
+import { CardBlock } from '@/packages/@cyberutopian/components';
 import { add } from '@/utils/math';
-import { CardBlock } from '@cyberutopian/components';
 
 const aa = [
   { type: '分类一', value: 27 },

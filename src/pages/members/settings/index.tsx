@@ -1,8 +1,8 @@
 import useClearLoginSate from '@/hooks/useClearLoginSate';
 import Icon from '@/icon';
 import { useRootContext } from '@/layout/context';
+import { CardBlock } from '@/packages/@cyberutopian/components';
 import { LockOutlined, SettingOutlined, UserOutlined } from '@ant-design/icons';
-import { CardBlock } from '@cyberutopian/components';
 import { Avatar, Button } from 'antd';
 import { useState } from 'react';
 import NotifyModal from './components/notify';

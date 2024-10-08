@@ -1,4 +1,4 @@
-import { CardBlock } from '@cyberutopian/components';
+import { CardBlock } from '@/packages/@cyberutopian/components';
 import { Avatar, List } from 'antd';
 
 const data = Array.from({ length: 23 }).map((_, i) => ({

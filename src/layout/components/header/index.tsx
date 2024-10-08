@@ -5,7 +5,7 @@
  * @LastEditTime: 2024-03-07 17:05:12
  * @Description:
  */
-import { LayoutHeader } from '@cyberutopian/layout';
+import { LayoutHeader } from '@/packages/@cyberutopian/layout';
 import { memo } from 'react';
 import HeaderContent from './header-content';
 import HeaderDropdown from './header-dropdown';

@@ -1,6 +1,6 @@
 import useNavigateMenu from '@/hooks/useNavigateMenu';
-import { LayoutNavigation } from '@cyberutopian/layout';
-import { NavigationType } from '@cyberutopian/layout/dist/typings/navigation';
+import { LayoutNavigation } from '@/packages/@cyberutopian/layout';
+import { NavigationType } from '@/packages/@cyberutopian/layout/typings/navigation';
 import { useNavigate } from 'react-router-dom';
 import { foldUpPath, navigationWidth } from '../../config';
 import NavigationHeader from './navigation-header';

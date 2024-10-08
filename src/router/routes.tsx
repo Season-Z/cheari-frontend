@@ -1,6 +1,6 @@
 import LazyImportComponent from '@/components/lazy-import-component';
 import Icon from '@/icon';
-import { PageRouterType } from '@cyberutopian/layout/dist/typings/navigation';
+import { PageRouterType } from '@/packages/@cyberutopian/layout/typings/navigation';
 import { lazy } from 'react';
 import App from '../App';
 

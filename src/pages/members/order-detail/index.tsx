@@ -1,4 +1,4 @@
-import { CardBlock } from '@cyberutopian/components';
+import { CardBlock } from '@/packages/@cyberutopian/components';
 import { Button } from 'antd';
 
 const OrderDetail = () => {

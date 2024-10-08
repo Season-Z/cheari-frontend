@@ -1,6 +1,6 @@
 import Contact from '@/components/contact';
 import Gap from '@/components/gap';
-import { CardBlock } from '@cyberutopian/components';
+import { CardBlock } from '@/packages/@cyberutopian/components';
 import { Card } from 'antd';
 import { Fragment } from 'react';
 

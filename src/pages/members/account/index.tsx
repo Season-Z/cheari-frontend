@@ -1,6 +1,6 @@
+import { CardBlock } from '@/packages/@cyberutopian/components';
 import { UploadOutlined } from '@ant-design/icons';
 import { ProForm } from '@ant-design/pro-components';
-import { CardBlock } from '@cyberutopian/components';
 import { Button, message, Upload } from 'antd';
 import React from 'react';
 import useStyles from './index.style';

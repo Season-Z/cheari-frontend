@@ -1,0 +1,27 @@
+{
+  "name": "@cyberutopian/hooks",
+  "private": false,
+  "version": "2.0.0",
+  "description": "公共方法与hook",
+  "main": "hooks.mjs",
+  "module": "hooks.mjs",
+  "types": "index.d.ts",
+  "scripts": {
+    "start": "badger",
+    "build": "badger --build",
+    "build:analyze": "badger --build --analyze",
+    "build:w": "badger --build --watch",
+    "lint": "eslint --ext .tsx,.ts src/",
+    "prettier": "prettier --write ./src"
+  },
+  "files": [
+    "dist",
+    "CHANGELOG.md"
+  ],
+  "keywords": [],
+  "author": "zhouxishun",
+  "license": "ISC",
+  "dependencies": {
+    "@cyberutopian/fetch": "workspace:^"
+  }
+}

@@ -1,5 +1,5 @@
 import { EnhanceSearchInput } from '@/components/form-field';
-import { CardBlock } from '@cyberutopian/components';
+import { CardBlock } from '@/packages/@cyberutopian/components';
 import { VideoPlayer, VideoPlayerProps } from '@graphland/react-video-player';
 import { Button, Card } from 'antd';
 import { useState } from 'react';

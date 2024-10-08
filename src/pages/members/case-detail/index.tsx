@@ -1,6 +1,6 @@
 import UploadImg from '@/components/upload/upload-img';
+import { CardBlock } from '@/packages/@cyberutopian/components';
 import { ProForm, ProFormRadio, ProFormUploadButton } from '@ant-design/pro-components';
-import { CardBlock } from '@cyberutopian/components';
 import { Dropdown, Input, MenuProps } from 'antd';
 import { useState } from 'react';
 import VoteModal from '../person/components/vote-modal';

@@ -1,4 +1,4 @@
-import { CardBlock } from '@cyberutopian/components';
+import { CardBlock } from '@/packages/@cyberutopian/components';
 // @ts-ignore
 import { VideoPlayer, VideoPlayerProps } from '@graphland/react-video-player';
 

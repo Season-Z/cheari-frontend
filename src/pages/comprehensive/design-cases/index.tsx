@@ -1,5 +1,5 @@
 import Gap from '@/components/gap';
-import { CardBlock } from '@cyberutopian/components';
+import { CardBlock } from '@/packages/@cyberutopian/components';
 import { List, Typography } from 'antd';
 
 const { Title, Paragraph, Text, Link } = Typography;

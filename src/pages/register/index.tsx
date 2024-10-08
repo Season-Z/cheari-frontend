@@ -1,4 +1,4 @@
-import { CardBlock } from '@cyberutopian/components';
+import { CardBlock } from '@/packages/@cyberutopian/components';
 import { Tabs } from 'antd';
 import React, { useState } from 'react';
 import Organization from './organization';

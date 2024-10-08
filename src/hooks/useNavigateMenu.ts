@@ -1,5 +1,5 @@
-import { formatNavigationData } from '@cyberutopian/layout';
-import { NavigationMenuType, PageRouterType } from '@cyberutopian/layout/dist/typings/navigation';
+import { formatNavigationData } from '@/packages/@cyberutopian/layout';
+import { NavigationMenuType, PageRouterType } from '@/packages/@cyberutopian/layout/typings/navigation';
 import { useEffect, useState } from 'react';
 import useGlobalData from './useGlobalData';
 

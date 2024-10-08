@@ -1,5 +1,5 @@
+import { CardBlock } from '@/packages/@cyberutopian/components';
 import { Bar } from '@ant-design/plots';
-import { CardBlock } from '@cyberutopian/components';
 import { FC } from 'react';
 
 const Quantity: FC<{ className: string }> = ({ className }) => {

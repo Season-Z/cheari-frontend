@@ -1,4 +1,4 @@
-import { createContext } from '@cyberutopian/hooks';
+import { createContext } from '@/packages/@cyberutopian/hooks';
 import { Dispatch, SetStateAction } from 'react';
 
 export interface RootContextType {

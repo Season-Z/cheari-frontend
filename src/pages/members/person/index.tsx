@@ -1,5 +1,5 @@
 import Gap from '@/components/gap';
-import { CardBlock } from '@cyberutopian/components';
+import { CardBlock } from '@/packages/@cyberutopian/components';
 import Assets from './components/assets';
 import Profile from './components/profile';
 

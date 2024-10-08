@@ -1,5 +1,5 @@
 import Gap from '@/components/gap';
-import { CardBlock } from '@cyberutopian/components';
+import { CardBlock } from '@/packages/@cyberutopian/components';
 import { Badge, Divider } from 'antd';
 
 const Point = () => {

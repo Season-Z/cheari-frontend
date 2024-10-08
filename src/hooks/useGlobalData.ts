@@ -1,5 +1,5 @@
 import { getDomainRoutes } from '@/layout/config/data';
-import { useGlobalState } from '@cyberutopian/hooks';
+import { useGlobalState } from '@/packages/@cyberutopian/hooks';
 import { useRef } from 'react';
 
 const useGlobalData = () => {

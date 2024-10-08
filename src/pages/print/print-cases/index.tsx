@@ -1,4 +1,4 @@
-import { CardBlock } from '@cyberutopian/components';
+import { CardBlock } from '@/packages/@cyberutopian/components';
 import { Card } from 'antd';
 import { useNavigate } from 'react-router-dom';
 

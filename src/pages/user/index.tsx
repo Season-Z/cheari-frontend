@@ -1,4 +1,4 @@
-import { CardBlock } from '@cyberutopian/components';
+import { CardBlock } from '@/packages/@cyberutopian/components';
 import { Outlet } from 'react-router-dom';
 import UserInfo from './forum/components/user-info';
 

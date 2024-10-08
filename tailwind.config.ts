@@ -8,6 +8,8 @@ const config: Config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
     './src/layout/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/packages/@cyberutopian/layout/**/*.{js,ts,jsx,tsx,mdx,html}',
+    './src/packages/@cyberutopian/components/**/*.{js,ts,jsx,tsx,mdx,html}',
     './node_modules/@cyberutopian/layout/**/*.{js,ts,jsx,tsx,mdx,html}',
     './node_modules/@cyberutopian/components/**/*.{js,ts,jsx,tsx,mdx,html}',
   ],

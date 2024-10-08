@@ -1,5 +1,5 @@
+import { CardBlock } from '@/packages/@cyberutopian/components';
 import { WordCloud } from '@ant-design/plots';
-import { CardBlock } from '@cyberutopian/components';
 import { FC } from 'react';
 
 const HotWords: FC<{ className: string }> = ({ className }) => {

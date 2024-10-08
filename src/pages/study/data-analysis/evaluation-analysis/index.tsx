@@ -1,5 +1,5 @@
+import { CardBlock } from '@/packages/@cyberutopian/components';
 import { Column } from '@ant-design/plots';
-import { CardBlock } from '@cyberutopian/components';
 
 const EvaluationAnalysis = () => {
   const config = {
