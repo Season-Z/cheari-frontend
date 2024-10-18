@@ -1,0 +1,30 @@
+{
+  "name": "@cyberutopian/fetch",
+  "version": "2.0.0",
+  "description": "request",
+  "main": "index.js",
+  "module": "index.mjs",
+  "types": "index.d.ts",
+  "scripts": {
+    "start": "plugin-builder",
+    "build": "plugin-builder --build",
+    "build:analyze": "plugin-builder --build --analyze",
+    "build:w": "plugin-builder --build --watch",
+    "lint": "eslint --ext .tsx,.ts src/",
+    "prettier": "prettier --write ./src",
+    "release": "npm publish --registry=http://192.168.5.134:8081/repository/npm/"
+  },
+  "keywords": [
+    "fetch",
+    "request",
+    "doc"
+  ],
+  "files": [
+    "dist"
+  ],
+  "author": "zhouxishun",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.8"
+  }
+}
